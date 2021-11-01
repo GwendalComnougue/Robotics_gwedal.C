@@ -7,8 +7,17 @@ here you can find the kinematic direct and inverse of the spider robot.
 
 Direct kinematic :
 
-P1:                 P2:                             P3:
+P1:           
+Z1= 0             
+X1= L1*cos(θ1)   
+Y1= L1*sin(θ1)   
 
-Z1= 0               Z2= L2* sin(θ2)
-X1= L1*cos(θ1)      X2= cos(θ1)*(L1+L2cos(θ2))
-Y1= L1*sin(θ1)      Y2= sin(θ1)*(L1+L2cos(θ2))
+P2:
+Z2= L2* sin(θ2)
+X2= cos(θ1)*(L1+L2 cos(θ2))
+Y2= sin(θ1)*(L1+L2 cos(θ2))
+
+P3:
+Z3= sin(θ2)*(L2+sin(θ3*L3))
+X3= cos (θ1)*(L1+L2 cos(θ2)+L3 cos(θ2+θ3))
+Y3= sin (θ1)*(L1+L2 cos(θ2)+L3 cos(θ2+θ3))
