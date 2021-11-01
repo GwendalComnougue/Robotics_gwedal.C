@@ -16,9 +16,6 @@ X1= L1*cos(θ1)
 Y1= L1*sin(θ1)			                                                                                       										
 
 
-
-
-
 P2:
 
 Z2= L2* sin(θ2)		
@@ -27,9 +24,6 @@ X2= cos(θ1)*(L1+L2 cos(θ2))
 
 
 Y2= sin(θ1)*(L1+L2 cos(θ2))			
-
-
-
 
 
 
@@ -43,8 +37,14 @@ Y3= sin (θ1)*(L1+L2 cos(θ2)+L3 cos(θ2+θ3))
 
 
 
-
-
 Inverse kinematic
 
-θ1
+θ1 = Arctan(X/Y)
+
+θ2 = Arctan[sin(θ3-L3)/(L2+cos(θ3)L3)]
+
+θ3 = Arcos [(x²+y²+(z-L1)²-L2²-L3²)/(2*L2*L3)]
+
+you can find more information in the Kinematic.PDF
+
+
