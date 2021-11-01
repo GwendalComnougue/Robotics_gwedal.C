@@ -14,6 +14,7 @@ Y1= L1*sin(θ1)
 
 P2:
 Z2= L2* sin(θ2)
+
 X2= cos(θ1)*(L1+L2 cos(θ2))
 Y2= sin(θ1)*(L1+L2 cos(θ2))
 
